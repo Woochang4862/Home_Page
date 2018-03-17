@@ -1,0 +1,40 @@
+<html>
+<head>
+<title> 로그인 </title>
+<script>
+function login_check() {
+ var id_value = login.name.value;
+ var nic_value = login.nic.value;
+ if((id_value =="첫번째 아이디" && nic_value=="첫번째 닉네임") || (id_value=="두번째 아이디" && nic_value=="두번째 닉네임")) {
+  alert(nic_value+"님 환영합니다.");
+  location.href='메인.html';
+ }
+ else {
+  alert("이름과 닉네임을 확인해주세요.");
+ }
+}
+</script>
+</head>
+<body>
+<form name=login onsubmit="login-check()">
+<table bordercolor=red border=1>
+<tr>
+ <td bgcolor=orange> 이름 </td>
+ <td><input type=text name=name vlaue=""></td>
+ <td rowspan=2 align=center>
+  <input type=button name=but value="로그인" onClick='Javascript_:login_check();'>
+  <input type=button name=but value="로그인" onClick='Javascript_:login_check();'>
+ </td>
+</tr>
+<tr>
+ <td bgcolor=orange> 닉네임 </td>
+ <td><input type=text name=nic vlaue=""></td>
+</tr>
+<tr>
+    <td align=right colspan=3><a href="lab01_main.html">취소</a></td>
+ <td align=right colspan=3><a href="JOINFORM.html">회원가입</a></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자기소개</title>
+<style type="text/css">
+@font-face{
+    font-family: "Typo_SsangmunDongB";
+    src : local('@'),
+    url("font/Typo_SsangmunDongB.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: "NanumBrush";
+	src : url("font/NanumBrush.eot"); /* IE */
+	src:local('☺'), 
+	url("font/NanumBrush.woff") format("woff"), /* FF, CH */
+    url("font/Typo_SsangmunDongB.ttf") format("truetype"); /* FF, CH, SF, OP */
+}
+
+body{
+   margin: 0;                           /* 바깥쪽 여백을 없앰 */
+   padding: 0;                          /* 안쪽 여백을 없앰 */
+   font-size: 0.75em;                   /* 글꼴 크기 */
+   line-height: 1.2em;                  /* 줄 간격 */
+   color: #333;                         /* 글꼴 색상 */
+   font-family: Typo_SsangmunDongB, 'Trebuchet MS', Verdana, Geneva, sans_serif;
+}
+
+#wrap{   
+   /* 1024 × 768 해상도에 맞추어 웹 페이지 크기 지정*/   
+   width : 971px; 
+   /* 백그라운드 이미지 적용 */
+   background-image: url(img/shadow.png);
+   background-repeat: repeat-y;
+   /* 중앙에 배치 */
+   margin: 0;
+   margin-right: auto; 
+   margin-left: auto;
+   text-align: left;               /*텍스트를 왼쪽에 배치*/
+   /* 페이지에 출력할 내용이 없어도 최소 높이는 780px */
+   min-height: 780px;
+    font-family: Typo_SsangmunDongB
+}
+
+#title h1, #title h2{
+   display: none;                   /*헤드라인 숨김 */
+}
+
+#logo{                             /*  로고 이미지  */
+   float: left;                    /* 화면 왼쪽에 배치 */
+   width: 256px;
+   height: 150px;
+   margin: 0px 0 0 40px;
+}
+
+/*리스트로 메인 메뉴 만들기*/
+nav#top_menu{
+   float: left;
+   width: 600px;
+   margin-top: 20px;
+}
+
+nav#top_menu ul{
+   list-style-type: none;
+   font-size: 24px;
+   font-weight: bold;
+}
+
+nav#top_menu ul li{
+   float: left;
+   margin: 0 15px;
+}
+
+nav#top_menu a{
+   text-decoration: none;
+   color: #333;
+   display: block;
+   height: 20px;
+}
+
+nav#top_menu a:HOVER{
+   color: #56DAE6;
+   font-size: 25px;
+}
+
+.clear{
+   clear: both;
+}
+
+/* 서브 메뉴  구성하기 */
+#sub_menu{
+	width: 238px;
+	float: left;
+	font-size: 1.7em;
+}
+
+#sub_menu ul{
+	list-style: none;
+	margin: 0 0 0 20px; /*상 좌*/
+}
+
+#sub_menu a{
+    font-family: Typo_SsangmunDongB;
+	text-decoration: none;
+	color: #666;
+	display: block;
+	height: 15px;
+	width: 150px;
+	padding: 7px;
+	border-bottom: 1px dotted #999;
+	background-image: url(img/bullet.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#sub_menu a:HOVER {
+	color: #56DAE6;
+	font-weight: bold;
+}
+
+/* 콘덴츠 설정하기 */
+#sub_section {	
+	float: right;
+	width: 650px;
+	padding-right: 30px;
+}
+
+#sub_section h1{
+	padding-left: 60px;
+	font-size: 50px;
+	color: #56DAE6;
+	text-shadow:1px 1px 3px #000;
+}
+
+#sub_section h1:HOVER{
+	color: #CCC;
+}
+
+@font-face{
+	font-family: ROCK;
+	src: url('font/ROCK.TTF');
+}
+
+#sub_section article p{
+	font-family: ROCK, 'Trebuchet MS', Veridana, Geneva, sans_serif;
+	font-size: 1.2em;	
+	line-height: 1.5em;
+}
+
+figure.history{
+	float: right;
+	margin: 5px 5px 5px 15px;	
+}
+
+/* 푸터 */
+footer{
+	margin: 50px 0 0 0;
+	height: 80px;
+	background-image: url(img/logo.jpg);
+	background-repeat: no-repeat;
+	background-position: 40px center;	
+}
+
+footer hr{
+	width: 900px;
+	margin: 0 0 0 10px;
+}
+
+footer #copyright{
+	font-family: NanumBrush, 'Trebuchet MS',Veridana, Geneva, sans_serif;
+	font-size: 18px;
+	width: 560px;
+	margin: 20px 0 0 220px;
+	float: left;
+}
+
+footer #social{
+	width: 130px;
+	margin: 20px 20px 0 0;
+	float: right;
+}
+
+footer #social img{
+	width: 33px;
+	height: 33px;
+}
+</style>
+</head>
+
+<body>
+<div id="wrap">
+	<header id="sub_header">
+	    <div id="ceil"></div>
+		<div id="logo">
+			<a href="lab01_main.html"><img id="#" src="img/logo.jpg" width="240" height="200"></a>			
+		</div>
+		
+
+						
+		<nav id="top_menu">
+			<ul>
+				<li><a href="lab01_main.html">HOME</a></li>
+				<li><a href="introduce.html">자기소개</a></li>
+				<li><a href="timetable.html">연구활동</a></li>
+			</ul>
+		</nav>
+	</header>		
+	<div class="clear"></div>
+	
+	<nav id="sub_menu">
+		<ul>		
+			<li><a href="introduce.html">현재의 나</a></li>
+		</ul>
+	</nav>
+
+
+	<section id="sub_section">
+    <h1>&lt;&lt;My Profile&gt;&gt;</h1>
+    <br>
+    <div><img id="fig" src="" ></div>
+    <ul>
+        <li onmouseover="show()" onmouseout="hide()">이름: 정우창
+        <li>학교: 서울대학교사범대학부설중학교
+        <li>학번: 3322
+        <li>연락처: 010-3855-4671
+        <li>e-mail: chad76@naver.com
+        <li>카카오톡ID: chad76
+        <li>생년월일: 2002/07/06
+    </ul>
+    <hr>
+    <h1>&lt;&lt;About ME&gt;&gt;</h1>
+    <ul>
+        <li>나의 취미
+            <ol type="1">
+                <li><b>게임</b><br>
+                    <img src="http://i1.kym-cdn.com/photos/images/original/001/046/405/82f.jpg" width="300"><br>
+                        가끔씩 머리 풀겸 하는 게임<br><br>
+                        
+                <li><b>좋아하는 음식 먹기</b><br>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><img src="img/햄버거.jpg" width="200"></td>
+                                <td><img src="img/Pizza.jpg" width="150"></td>
+                                <td><img src="img/치킨.jpg" width="150"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    스트레스 받거나 힘든 일이 있을 때는 맛있는걸 먹으며 머리를 식히곤 합니다<br>
+                    좋아하는 음식: 햄버거, 치킨, 피자 등...<br><br>
+            </ol>
+        <li>좋아하는 것
+            <ol type="1">
+                <li><b>영화</b><br>
+                    <ol type="A">
+                        <li>어벤져스<br>
+                            <img src="img/movie.jpg" width="200"><br>
+                마블 짱짱좋아합니다..<br>
+                    </ol>
+                <li><b>트와이스</b><br>
+                    <ol type="A">
+                        <li>정연 나연 모모 다현 쯔위 지효 채영 미나 사나</br>
+                            <img src="img/twice.jpg" width="200">
+                                <br>트와이스 원스 영원히~~<br><br>
+                        <li>JYP FANS<br>
+                            <a href="https://fans.jype.com/Portal"><img src="img/images.jpg" width="400"></a>
+                                <br><br><br></ol>
+                </li>
+                <li><a href="https://www.youtube.com/playlist?list=PLAdVJo6M_WcMeArpO2WnJHYeSfyQ7tQrS">음악</a></li>
+                    <ol type="A">
+                        <li>  The Chainsmokers - Closer (Lyric) ft. Halsey<br><iframe width="560" height="315" src="https://www.youtube.com/embed/PT2_F-1esPk?list=PLAdVJo6M_WcMeArpO2WnJHYeSfyQ7tQrS" frameborder="0" allowfullscreen></iframe></li>
+                        <br>
+                        <li>Wiz Khalifa - See You Again ft. Charlie Puth<br><iframe width="560" height="315" src="https://www.youtube.com/embed/RgKAFK5djSk?list=PLAdVJo6M_WcMeArpO2WnJHYeSfyQ7tQrS" frameborder="0" allowfullscreen></iframe></li>
+                        <br>
+                        <li>OneRepublic - Counting Stars<br><iframe width="560" height="315" src="https://www.youtube.com/embed/hT_nvWreIhg?list=PLAdVJo6M_WcMeArpO2WnJHYeSfyQ7tQrS" frameborder="0" allowfullscreen></iframe></li>
+                    </ol>
+            </ol>
+    </ul>
+	</section>
+
+	<div class="clear"></div>
+	
+	<footer>
+		<hr>
+        <div id="copyright">
+        All contents Copyright 2014 CakeWorld Inc. all rights reserved<br>
+        Contact mail : CakeWorld@cakeworldbiz.com Tel: +82 63 765 4321 Fax +82 61 765 4321
+        </div>
+        <div id="social">
+			<img src="img/facebook.gif" width="33" height="33" alt="Facebook"> 
+			<img src="img/twitter.gif" width="33" height="34" alt="Twitter">
+		</div>  
+	</footer>	
+</div>	
+</body>
+</html>

@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+<TITLE> 회원가입폼 </TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+<script type="text/javascript">
+ 
+function checkfield(){
+ 
+ if(document.addjoin.id.value==""){ //id값이 없을 경우
+ alert("아이디를 입력하세요");         //메세지 경고창을 띄운 후
+ document.addjoin.id.focus();     // id 텍스트박스에 커서를 위치
+ exit;
+ 
+ }else if(document.addjoin.pw.value==""){
+ alert("비밀번호를 입력하세요");
+ document.addjoin.pw.focus();
+ exit;
+ 
+ }else if(document.addjoin.pw2.value==""){
+ alert("비밀번호확인을 입력하세요");
+ document.addjoin.pw2.focus();
+ exit;
+ }
+ 
+ 
+ if(document.addjoin.pw.value!=document.addjoin.pw2.value){
+ //비밀번호와 비밀번호확인의 값이 다를 경우
+ 
+ alert("입력한 2개의 비밀번호가 일치하지 않습니다.");
+ document.addjoin.pw.focus();
+ exit;
+ 
+ }
+ document.addjoin.submit();
+ 
+}
+</script>
+</HEAD>
+<BODY>
+    <center>
+        <h1>회원가입</h1>
+        
+        <form action="addjoinaction" name="addjoin" method="post">
+            <table style="text-align: left" width="400px">
+                <tr>
+                    <td>아이디</td><td><input type="text" name="id" id="id"></td>
+                    <div id="ckid"></div>
+                </tr>
+                
+                <tr>
+                    <td>비밀번호</td><td><input type="password" name="pw" id="pw"></td>
+                </tr>
+                
+                <tr>
+                    <td>비밀번호확인</td><td><input type="password" name="pw2" id="pw2"></td>
+                </tr>
+            </table>
+            <br>
+            <table width="400px">
+                <tr>
+                    <td style="text-align: center">
+                        <input type="button" value="가입" onclick="checkfield()">
+                       <input type="reset" value="취소">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</BODY>
+</HTML>
